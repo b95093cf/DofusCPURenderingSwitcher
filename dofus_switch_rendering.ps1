@@ -71,7 +71,7 @@ if ($index -ne -1) {
 		try {
 			[System.IO.File]::WriteAllBytes($SETTINGS_PATH, $binaryData)
 			Write-Output " "
-			Write-Output "\nThe CPU rendering has been disabled."
+			Write-Output "The CPU rendering has been disabled."
 		}
 		catch {
 			Write-Error "Can't modify the settings: $_"
